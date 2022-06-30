@@ -1,0 +1,12 @@
+image: ruby:latest
+
+stages:
+  - test
+test:
+  stage: test
+  before_script:
+    - ruby -v
+    - bundle config set path 'vendor'
+    - bundle install -j $(nproc)
+  script:
+    - bundle exec ruby countvowels_test.rb

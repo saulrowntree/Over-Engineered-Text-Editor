@@ -1,0 +1,11 @@
+image: ubuntu:latest
+stages:
+  - test
+test:
+  stage: test
+  before_script:
+  - ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime && apt-get update -qy
+  script:
+    - apt-get install -y golang
+    - cd src 
+    - go test -v main_test.go main.go
