@@ -6,7 +6,7 @@ Mainly exists as a demonstration of proficiency in development across a range of
 
 Each services' tests can be ran with the .gitlab-ci.yml scripts written within them, or with the actual tests files. 
 
-The Character Count Service (editor-charcount) is written in JavaScript and testd with Chai. 
+The Character Count Service (editor-charcount) is written in JavaScript and tested with Chai. 
 
 The Comma Count Service (editor-commacount) is written in Go and tested with Testing and net/http/httptest. 
 
